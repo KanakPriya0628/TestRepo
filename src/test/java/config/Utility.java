@@ -21,6 +21,7 @@ public class Utility {
 		}catch (IOException e) {
 			e.printStackTrace();
 		}
+		System.out.print("Screenshot Changes");
 	}
 
 }

@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 7.304 s <<< FAILURE! - in TestSuite
-pageSetUp(com.CRM.TestCases.LoginPageTest)  Time elapsed: 0.155 s  <<< FAILURE!
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 9.142 s <<< FAILURE! - in TestSuite
+pageSetUp(com.CRM.TestCases.LoginPageTest)  Time elapsed: 0.373 s  <<< FAILURE!
 java.lang.NullPointerException: Cannot invoke "com.CRM.Pages.HomePage.getSignIn()" because "this.hp" is null
 
