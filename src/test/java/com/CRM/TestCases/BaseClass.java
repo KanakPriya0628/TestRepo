@@ -19,7 +19,7 @@ public class BaseClass {
 	public void setUp() {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get("https://automationplayground.com/crm/");
 		hp = new HomePage(driver);
 		lp = new LoginPage(driver);

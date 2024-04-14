@@ -3,6 +3,8 @@ package com.CRM.Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import config.Utility;
+
 public class LoginPage {
 	
 	private WebDriver driver;
@@ -22,6 +24,7 @@ public class LoginPage {
 		public void doLogin(String em,String ps) {
 			 driver.findElement(email).sendKeys(em);
 			 driver.findElement(pass).sendKeys(ps);
+			 Utility.capture(driver);
 			 driver.findElement(btn).click();
 
 		}
