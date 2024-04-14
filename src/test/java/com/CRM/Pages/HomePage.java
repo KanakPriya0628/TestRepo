@@ -29,7 +29,7 @@ public class HomePage {
 	public void getSignIn() {
 		Utility.capture(driver);
 		driver.findElement(signIn).click();
-		Utility.capture(driver);
+		
 	}
 
 }
