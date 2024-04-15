@@ -1,41 +1,194 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="6" passed="4" failed="0" skipped="1">
+<testng-results ignored="1" total="8" passed="4" failed="2" skipped="1">
   <reporter-output>
+    <line>
+      <![CDATA[Test Executing on Chrome ! ]]>
+    </line>
   </reporter-output>
-  <suite started-at="2024-04-14T21:10:32 IST" name="Surefire suite" finished-at="2024-04-14T21:10:40 IST" duration-ms="8095">
+  <suite started-at="2024-04-15T15:55:48 IST" name="Surefire suite" finished-at="2024-04-15T15:56:00 IST" duration-ms="11260">
     <groups>
     </groups>
-    <test started-at="2024-04-14T21:10:32 IST" name="Surefire test" finished-at="2024-04-14T21:10:40 IST" duration-ms="8095">
+    <test started-at="2024-04-15T15:55:48 IST" name="Surefire test" finished-at="2024-04-15T15:56:00 IST" duration-ms="11260">
+      <class name="seleniumGrid.GridTest">
+        <test-method signature="testOnChrome()[pri:0, instance:seleniumGrid.GridTest@4de5031f]" started-at="2024-04-15T15:55:59 IST" name="testOnChrome" finished-at="2024-04-15T15:56:00 IST" duration-ms="348" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DELL', ip: '192.168.1.3'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DELL', ip: '192.168.1.3'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:141)
+at seleniumGrid.GridTest.testOnChrome(GridTest.java:22)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.io.UncheckedIOException: java.net.ConnectException
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:436)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:352)
+at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:89)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+... 35 more
+Caused by: java.net.ConnectException
+at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1028)
+at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227)
+at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280)
+at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238)
+at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.nio.channels.ClosedChannelException
+at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:202)
+at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:786)
+at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:874)
+at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210)
+at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212)
+... 9 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test Executing on Chrome ! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testOnChrome -->
+      </class> <!-- seleniumGrid.GridTest -->
+      <class name="seleniumGrid.CrossbrowserTest">
+        <test-method signature="browserTest(java.lang.String)[pri:0, instance:seleniumGrid.CrossbrowserTest@52aa2946]" started-at="2024-04-15T15:55:59 IST" name="browserTest" finished-at="2024-04-15T15:55:59 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'bname' is required by @Test on method browserTest but has not been marked @Optional or defined
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'bname' is required by @Test on method browserTest but has not been marked @Optional or defined
+
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:924)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserTest -->
+      </class> <!-- seleniumGrid.CrossbrowserTest -->
       <class name="com.CRM.TestCases.CustomersPageTest">
-        <test-method signature="f()[pri:0, instance:com.CRM.TestCases.CustomersPageTest@797badd3]" started-at="2024-04-14T21:10:38 IST" name="f" finished-at="2024-04-14T21:10:38 IST" duration-ms="5" status="PASS">
+        <test-method signature="f()[pri:0, instance:com.CRM.TestCases.CustomersPageTest@b7f23d9]" started-at="2024-04-15T15:55:57 IST" name="f" finished-at="2024-04-15T15:55:57 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
       </class> <!-- com.CRM.TestCases.CustomersPageTest -->
       <class name="com.CRM.TestCases.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.CRM.TestCases.HomePageTest@7f77e91b]" started-at="2024-04-14T21:10:32 IST" name="setUp" finished-at="2024-04-14T21:10:38 IST" duration-ms="6234" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.CRM.TestCases.HomePageTest@525f1e4e]" started-at="2024-04-15T15:55:48 IST" name="setUp" finished-at="2024-04-15T15:55:57 IST" duration-ms="8519" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:com.CRM.TestCases.HomePageTest@7f77e91b]" started-at="2024-04-14T21:10:38 IST" name="pageSetUp" finished-at="2024-04-14T21:10:39 IST" duration-ms="1247" status="PASS">
+        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:com.CRM.TestCases.HomePageTest@525f1e4e]" started-at="2024-04-15T15:55:57 IST" name="pageSetUp" finished-at="2024-04-15T15:55:59 IST" duration-ms="1693" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageSetUp -->
-        <test-method signature="verifyUrl()[pri:1, instance:com.CRM.TestCases.HomePageTest@7f77e91b]" started-at="2024-04-14T21:10:39 IST" name="verifyUrl" finished-at="2024-04-14T21:10:39 IST" duration-ms="67" status="PASS">
+        <test-method signature="verifyUrl()[pri:1, instance:com.CRM.TestCases.HomePageTest@525f1e4e]" started-at="2024-04-15T15:55:59 IST" name="verifyUrl" finished-at="2024-04-15T15:55:59 IST" duration-ms="27" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUrl -->
-        <test-method signature="verifyTitle()[pri:2, instance:com.CRM.TestCases.HomePageTest@7f77e91b]" started-at="2024-04-14T21:10:39 IST" name="verifyTitle" finished-at="2024-04-14T21:10:39 IST" duration-ms="38" status="PASS">
+        <test-method signature="verifyTitle()[pri:2, instance:com.CRM.TestCases.HomePageTest@525f1e4e]" started-at="2024-04-15T15:55:59 IST" name="verifyTitle" finished-at="2024-04-15T15:55:59 IST" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitle -->
-        <test-method signature="verifySignIn()[pri:3, instance:com.CRM.TestCases.HomePageTest@7f77e91b]" started-at="2024-04-14T21:10:39 IST" name="verifySignIn" finished-at="2024-04-14T21:10:40 IST" duration-ms="366" status="PASS">
+        <test-method signature="verifySignIn()[pri:3, instance:com.CRM.TestCases.HomePageTest@525f1e4e]" started-at="2024-04-15T15:55:59 IST" name="verifySignIn" finished-at="2024-04-15T15:55:59 IST" duration-ms="498" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignIn -->
       </class> <!-- com.CRM.TestCases.HomePageTest -->
       <class name="com.CRM.TestCases.LoginPageTest">
-        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:com.CRM.TestCases.LoginPageTest@44a664f2]" started-at="2024-04-14T21:10:40 IST" name="pageSetUp" finished-at="2024-04-14T21:10:40 IST" duration-ms="1" status="FAIL">
+        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:com.CRM.TestCases.LoginPageTest@75f9eccc]" started-at="2024-04-15T15:55:59 IST" name="pageSetUp" finished-at="2024-04-15T15:55:59 IST" duration-ms="2" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "com.CRM.Pages.HomePage.getSignIn()" because "this.hp" is null]]>
@@ -78,7 +231,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageSetUp -->
-        <test-method signature="verifyLogin()[pri:0, instance:com.CRM.TestCases.LoginPageTest@44a664f2]" started-at="2024-04-14T21:10:40 IST" name="verifyLogin" finished-at="2024-04-14T21:10:40 IST" duration-ms="0" status="SKIP">
+        <test-method signature="verifyLogin()[pri:0, instance:com.CRM.TestCases.LoginPageTest@75f9eccc]" started-at="2024-04-15T15:55:59 IST" name="verifyLogin" finished-at="2024-04-15T15:55:59 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "com.CRM.Pages.HomePage.getSignIn()" because "this.hp" is null]]>

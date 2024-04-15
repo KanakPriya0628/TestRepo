@@ -3,6 +3,16 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
+      <class name="seleniumGrid.CrossbrowserTest">
+        <methods>
+          <include name="browserTest"/>
+        </methods>
+      </class> <!-- seleniumGrid.CrossbrowserTest -->
+      <class name="seleniumGrid.GridTest">
+        <methods>
+          <include name="testOnChrome"/>
+        </methods>
+      </class> <!-- seleniumGrid.GridTest -->
       <class name="com.CRM.TestCases.LoginPageTest">
         <methods>
           <include name="verifyLogin"/>
