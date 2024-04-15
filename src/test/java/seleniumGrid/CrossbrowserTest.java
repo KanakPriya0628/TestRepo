@@ -39,6 +39,7 @@ public class CrossbrowserTest {
 			Reporter.log("Driver session established with server! ", true);
 			
 		}
+		
 		Thread.sleep(5000);
 		driver.get("https://www.amazon.in/");
 		System.out.println("Title is "+driver.getTitle());

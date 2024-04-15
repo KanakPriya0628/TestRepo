@@ -5,12 +5,12 @@
       <![CDATA[Test Executing on Chrome ! ]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-04-15T15:55:48 IST" name="Surefire suite" finished-at="2024-04-15T15:56:00 IST" duration-ms="11260">
+  <suite started-at="2024-04-15T16:04:28 IST" name="Surefire suite" finished-at="2024-04-15T16:04:35 IST" duration-ms="7466">
     <groups>
     </groups>
-    <test started-at="2024-04-15T15:55:48 IST" name="Surefire test" finished-at="2024-04-15T15:56:00 IST" duration-ms="11260">
+    <test started-at="2024-04-15T16:04:28 IST" name="Surefire test" finished-at="2024-04-15T16:04:35 IST" duration-ms="7466">
       <class name="seleniumGrid.GridTest">
-        <test-method signature="testOnChrome()[pri:0, instance:seleniumGrid.GridTest@4de5031f]" started-at="2024-04-15T15:55:59 IST" name="testOnChrome" finished-at="2024-04-15T15:56:00 IST" duration-ms="348" status="FAIL">
+        <test-method signature="testOnChrome()[pri:0, instance:seleniumGrid.GridTest@400cff1a]" started-at="2024-04-15T16:04:35 IST" name="testOnChrome" finished-at="2024-04-15T16:04:35 IST" duration-ms="237" status="FAIL">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
@@ -109,7 +109,7 @@ at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHtt
         </test-method> <!-- testOnChrome -->
       </class> <!-- seleniumGrid.GridTest -->
       <class name="seleniumGrid.CrossbrowserTest">
-        <test-method signature="browserTest(java.lang.String)[pri:0, instance:seleniumGrid.CrossbrowserTest@52aa2946]" started-at="2024-04-15T15:55:59 IST" name="browserTest" finished-at="2024-04-15T15:55:59 IST" duration-ms="0" status="FAIL">
+        <test-method signature="browserTest(java.lang.String)[pri:0, instance:seleniumGrid.CrossbrowserTest@64c87930]" started-at="2024-04-15T16:04:35 IST" name="browserTest" finished-at="2024-04-15T16:04:35 IST" duration-ms="0" status="FAIL">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
@@ -160,35 +160,35 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
         </test-method> <!-- browserTest -->
       </class> <!-- seleniumGrid.CrossbrowserTest -->
       <class name="com.CRM.TestCases.CustomersPageTest">
-        <test-method signature="f()[pri:0, instance:com.CRM.TestCases.CustomersPageTest@b7f23d9]" started-at="2024-04-15T15:55:57 IST" name="f" finished-at="2024-04-15T15:55:57 IST" duration-ms="3" status="PASS">
+        <test-method signature="f()[pri:0, instance:com.CRM.TestCases.CustomersPageTest@3d36e4cd]" started-at="2024-04-15T16:04:33 IST" name="f" finished-at="2024-04-15T16:04:33 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
       </class> <!-- com.CRM.TestCases.CustomersPageTest -->
       <class name="com.CRM.TestCases.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.CRM.TestCases.HomePageTest@525f1e4e]" started-at="2024-04-15T15:55:48 IST" name="setUp" finished-at="2024-04-15T15:55:57 IST" duration-ms="8519" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.CRM.TestCases.HomePageTest@6ee12bac]" started-at="2024-04-15T16:04:28 IST" name="setUp" finished-at="2024-04-15T16:04:32 IST" duration-ms="4716" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:com.CRM.TestCases.HomePageTest@525f1e4e]" started-at="2024-04-15T15:55:57 IST" name="pageSetUp" finished-at="2024-04-15T15:55:59 IST" duration-ms="1693" status="PASS">
+        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:com.CRM.TestCases.HomePageTest@6ee12bac]" started-at="2024-04-15T16:04:33 IST" name="pageSetUp" finished-at="2024-04-15T16:04:34 IST" duration-ms="1903" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageSetUp -->
-        <test-method signature="verifyUrl()[pri:1, instance:com.CRM.TestCases.HomePageTest@525f1e4e]" started-at="2024-04-15T15:55:59 IST" name="verifyUrl" finished-at="2024-04-15T15:55:59 IST" duration-ms="27" status="PASS">
+        <test-method signature="verifyUrl()[pri:1, instance:com.CRM.TestCases.HomePageTest@6ee12bac]" started-at="2024-04-15T16:04:34 IST" name="verifyUrl" finished-at="2024-04-15T16:04:34 IST" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUrl -->
-        <test-method signature="verifyTitle()[pri:2, instance:com.CRM.TestCases.HomePageTest@525f1e4e]" started-at="2024-04-15T15:55:59 IST" name="verifyTitle" finished-at="2024-04-15T15:55:59 IST" duration-ms="22" status="PASS">
+        <test-method signature="verifyTitle()[pri:2, instance:com.CRM.TestCases.HomePageTest@6ee12bac]" started-at="2024-04-15T16:04:34 IST" name="verifyTitle" finished-at="2024-04-15T16:04:35 IST" duration-ms="25" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitle -->
-        <test-method signature="verifySignIn()[pri:3, instance:com.CRM.TestCases.HomePageTest@525f1e4e]" started-at="2024-04-15T15:55:59 IST" name="verifySignIn" finished-at="2024-04-15T15:55:59 IST" duration-ms="498" status="PASS">
+        <test-method signature="verifySignIn()[pri:3, instance:com.CRM.TestCases.HomePageTest@6ee12bac]" started-at="2024-04-15T16:04:35 IST" name="verifySignIn" finished-at="2024-04-15T16:04:35 IST" duration-ms="444" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignIn -->
       </class> <!-- com.CRM.TestCases.HomePageTest -->
       <class name="com.CRM.TestCases.LoginPageTest">
-        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:com.CRM.TestCases.LoginPageTest@75f9eccc]" started-at="2024-04-15T15:55:59 IST" name="pageSetUp" finished-at="2024-04-15T15:55:59 IST" duration-ms="2" status="FAIL">
+        <test-method is-config="true" signature="pageSetUp()[pri:0, instance:com.CRM.TestCases.LoginPageTest@55040f2f]" started-at="2024-04-15T16:04:35 IST" name="pageSetUp" finished-at="2024-04-15T16:04:35 IST" duration-ms="1" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "com.CRM.Pages.HomePage.getSignIn()" because "this.hp" is null]]>
@@ -231,7 +231,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageSetUp -->
-        <test-method signature="verifyLogin()[pri:0, instance:com.CRM.TestCases.LoginPageTest@75f9eccc]" started-at="2024-04-15T15:55:59 IST" name="verifyLogin" finished-at="2024-04-15T15:55:59 IST" duration-ms="0" status="SKIP">
+        <test-method signature="verifyLogin()[pri:0, instance:com.CRM.TestCases.LoginPageTest@55040f2f]" started-at="2024-04-15T16:04:35 IST" name="verifyLogin" finished-at="2024-04-15T16:04:35 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "com.CRM.Pages.HomePage.getSignIn()" because "this.hp" is null]]>
